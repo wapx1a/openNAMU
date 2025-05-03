@@ -226,7 +226,7 @@ with get_db_connect(init_mode = True) as conn:
             else:
                 print(server_set_var[i]['display'] + ' (' + server_set_var[i]['default'] + ') : ', end = '')
 
-            server_set_val = input()
+            server_set_val = ''
             if server_set_val == '':
                 server_set_val = server_set_var[i]['default']
             elif server_set_var[i]['require'] == 'select':
